@@ -15,11 +15,15 @@
       <div class="card card-primary">
         <div class="card-header">
           <h3 class="card-title">:: Ingresar Tareas ::</h3>
-
+          @if (session('status'))
+              <div class="alert alert-success">
+               {{ session('status') }}
+             </div>
+         @endif
         </div>
         <!-- /.card-header -->
         <!-- form start -->
-        <form action="{{url('')}}" method="post">
+        <form action="{{url('guardarTareas')}}" method="post">
           @csrf
           <div class="card-body">
             <div class="form-group">
