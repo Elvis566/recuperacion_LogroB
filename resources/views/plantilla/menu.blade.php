@@ -24,6 +24,12 @@
               <p>Empleados</p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="{{ url('mostrar')}}" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Lista de Empleados</p>
+            </a>
+          </li>
       
         </ul>
       </li>

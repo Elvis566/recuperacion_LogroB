@@ -20,4 +20,5 @@ Route::post('/guardarTareas', [Tarea_controller::class, 'save']);
 
 Route::get('/empleado', [Empleado_controller::class, 'index']);
 Route::post('/guardarEmpleado', [Empleado_controller::class, 'save']);
-
+Route::get('/mostrar', [Empleado_controller::class, 'filtrar']);
+Route::get('/filtrar', [Empleado_controller::class, 'filtrar']);
